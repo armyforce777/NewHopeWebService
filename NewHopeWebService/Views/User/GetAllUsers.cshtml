@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "GetAllUsers";
+}
+
+<div ng-controller="UserController">
+
+    <table ng-repeat="user in users">
+        <tr>
+            <td>First Name</td>
+            <td>{{user.FirstName}}</td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>{{user.LastName}}</td>
+        </tr>
+    </table>
+
+</div>
+
+<h2>GetAllUsers</h2>
+
+@section scripts{
+    <script src="~/Scripts/NewHopeApp/Controller/UserController.js"></script>
+}

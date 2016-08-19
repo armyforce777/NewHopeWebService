@@ -18,7 +18,8 @@ namespace NewHopeWebService
         public NewHopeDBEntities()
             : base("name=NewHopeDBEntities")
         {
-            //lazy loading and serialization do not mix up well, it is easy to query for entire database because of lazy loading
+            //lazy loading and serialization do not mix up well, it is easy to query 
+            //for entire database because of lazy loading
             Configuration.LazyLoadingEnabled = false;
         }
     
